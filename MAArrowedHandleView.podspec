@@ -27,7 +27,7 @@ TODO: make Swift version.
   s.source           = { :git => 'https://github.com/devthanatos/MAArrowedHandleView.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
-
+  s.requires_arc = true
   s.source_files = 'MAArrowedHandleView/Classes/**/*'
 
   s.frameworks = 'UIKit'
