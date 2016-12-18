@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MAArrowedHandleView_Example' do
+  pod 'MAArrowedHandleView', :path => '../'
+
+  target 'MAArrowedHandleView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
