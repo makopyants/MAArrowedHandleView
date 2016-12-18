@@ -2,11 +2,11 @@
 //  MAViewController.h
 //  MAArrowedHandleView
 //
-//  Created by Michael Akopyants on 12/18/2016.
-//  Copyright (c) 2016 Michael Akopyants. All rights reserved.
+//  Created by Michael Akopyants on 18/12/2016.
+//  Copyright © 2016 Michael Akopyants. All rights reserved.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @interface MAViewController : UIViewController
 

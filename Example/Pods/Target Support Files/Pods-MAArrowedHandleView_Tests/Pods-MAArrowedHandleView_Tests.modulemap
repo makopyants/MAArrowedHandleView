@@ -1,0 +1,6 @@
+framework module Pods_MAArrowedHandleView_Tests {
+  umbrella header "Pods-MAArrowedHandleView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

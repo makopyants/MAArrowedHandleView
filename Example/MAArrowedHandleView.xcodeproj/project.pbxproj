@@ -15,7 +15,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* MAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* MAAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* MAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* MAViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -23,6 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		F9F598D81E069DA9006F4B0C /* MAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F598D71E069DA9006F4B0C /* MAViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		3DB99513A8EC30A16C0E0353 /* Pods-MAArrowedHandleView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAArrowedHandleView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MAArrowedHandleView_Example/Pods-MAArrowedHandleView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		49F1DD75C92D56BE62A052F6 /* Pods-MAArrowedHandleView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAArrowedHandleView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MAArrowedHandleView_Tests/Pods-MAArrowedHandleView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		58C75DDBD856C93F6D8A7E85 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		58C75DDBD856C93F6D8A7E85 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5D19A877D70FCDB8D5735FDD /* Pods-MAArrowedHandleView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAArrowedHandleView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MAArrowedHandleView_Tests/Pods-MAArrowedHandleView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MAArrowedHandleView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAArrowedHandleView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,8 +50,6 @@
 		6003F59B195388D20070C39A /* MAArrowedHandleView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MAArrowedHandleView-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* MAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* MAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* MAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* MAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* MAArrowedHandleView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAArrowedHandleView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -63,8 +61,10 @@
 		889756E1AB9232B908F21813 /* Pods-MAArrowedHandleView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAArrowedHandleView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MAArrowedHandleView_Example/Pods-MAArrowedHandleView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C0356B96F984FFE14D22F2AE /* Pods_MAArrowedHandleView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAArrowedHandleView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF149566F5CFEDD22FC3D1C0 /* Pods_MAArrowedHandleView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAArrowedHandleView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6C417F6BAE326FAA38573BA /* MAArrowedHandleView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MAArrowedHandleView.podspec; path = ../MAArrowedHandleView.podspec; sourceTree = "<group>"; };
-		EFCFFCBE2067C776EF9EE8E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E6C417F6BAE326FAA38573BA /* MAArrowedHandleView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MAArrowedHandleView.podspec; path = ../MAArrowedHandleView.podspec; sourceTree = "<group>"; };
+		EFCFFCBE2067C776EF9EE8E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F9F598D61E069DA9006F4B0C /* MAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAViewController.h; sourceTree = "<group>"; };
+		F9F598D71E069DA9006F4B0C /* MAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +133,10 @@
 				6003F59C195388D20070C39A /* MAAppDelegate.h */,
 				6003F59D195388D20070C39A /* MAAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* MAViewController.h */,
-				6003F5A6195388D20070C39A /* MAViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				F9F598D61E069DA9006F4B0C /* MAViewController.h */,
+				F9F598D71E069DA9006F4B0C /* MAViewController.m */,
 			);
 			name = "Example for MAArrowedHandleView";
 			path = MAArrowedHandleView;
@@ -244,7 +244,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MA;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Michael Akopyants";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -391,7 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* MAAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* MAViewController.m in Sources */,
+				F9F598D81E069DA9006F4B0C /* MAViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,14 +447,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -487,13 +492,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

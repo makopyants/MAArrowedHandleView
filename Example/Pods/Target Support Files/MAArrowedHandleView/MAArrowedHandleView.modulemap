@@ -1,0 +1,6 @@
+framework module MAArrowedHandleView {
+  umbrella header "MAArrowedHandleView-umbrella.h"
+
+  export *
+  module * { export * }
+}

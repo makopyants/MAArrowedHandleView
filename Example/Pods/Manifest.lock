@@ -1,0 +1,16 @@
+PODS:
+  - MAArrowedHandleView (0.1.0)
+
+DEPENDENCIES:
+  - MAArrowedHandleView (from `../`)
+
+EXTERNAL SOURCES:
+  MAArrowedHandleView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MAArrowedHandleView: a4f538fe07c120c5fcb8b3e86ad11849be855f65
+
+PODFILE CHECKSUM: ef9f3a333b6a9f6247acd053b871411fbfa87ff2
+
+COCOAPODS: 1.1.1

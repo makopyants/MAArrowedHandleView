@@ -1,27 +1,104 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6YO-A0-JCX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="wQg-tq-qST">
+        <scene sceneID="gOU-8q-TG3">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="MAViewController" sceneMemberID="viewController">
+                <viewController id="fdw-T9-t0H" customClass="MAViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                        <viewControllerLayoutGuide type="top" id="vgJ-o3-rKD"/>
+                        <viewControllerLayoutGuide type="bottom" id="3PS-j3-S7N"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="S5u-g2-s7D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1i-jA-Al5">
+                                <rect key="frame" x="0.0" y="323.5" width="375" height="20"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uw-Fs-feC" customClass="MAArrowedHandleView">
+                                        <rect key="frame" x="174.5" y="0.0" width="25" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="277-gX-49H"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="1" green="0.29754464285714288" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="mode">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4uw-Fs-feC" firstAttribute="centerX" secondItem="K1i-jA-Al5" secondAttribute="centerX" id="1Lz-9v-KX7"/>
+                                    <constraint firstAttribute="bottom" secondItem="4uw-Fs-feC" secondAttribute="bottom" id="K4c-vW-GoJ"/>
+                                    <constraint firstItem="4uw-Fs-feC" firstAttribute="top" secondItem="K1i-jA-Al5" secondAttribute="top" id="N7T-sn-GY6"/>
+                                    <constraint firstItem="4uw-Fs-feC" firstAttribute="centerY" secondItem="K1i-jA-Al5" secondAttribute="centerY" id="TUW-Y4-Q4s"/>
+                                    <constraint firstAttribute="height" constant="20" id="o1n-4g-iCm"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWN-Kf-bdI">
+                                <rect key="frame" x="16" y="119" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="f3h-H8-unV"/>
+                                </constraints>
+                                <state key="normal" title="Toggle"/>
+                                <connections>
+                                    <action selector="toggle:" destination="fdw-T9-t0H" eventType="touchUpInside" id="0yL-Te-Bfd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K1i-jA-Al5" firstAttribute="centerY" secondItem="S5u-g2-s7D" secondAttribute="centerY" id="0aS-8L-KZ3"/>
+                            <constraint firstItem="dWN-Kf-bdI" firstAttribute="leading" secondItem="S5u-g2-s7D" secondAttribute="leading" constant="16" id="Lz1-wS-oIb"/>
+                            <constraint firstItem="dWN-Kf-bdI" firstAttribute="top" secondItem="vgJ-o3-rKD" secondAttribute="bottom" constant="55" id="c68-fU-7QH"/>
+                            <constraint firstAttribute="trailing" secondItem="K1i-jA-Al5" secondAttribute="trailing" id="gwV-My-95e"/>
+                            <constraint firstAttribute="trailing" secondItem="dWN-Kf-bdI" secondAttribute="trailing" constant="16" id="o91-V8-KNk"/>
+                            <constraint firstItem="K1i-jA-Al5" firstAttribute="centerX" secondItem="S5u-g2-s7D" secondAttribute="centerX" id="ouQ-lT-6bY"/>
+                            <constraint firstItem="K1i-jA-Al5" firstAttribute="leading" secondItem="S5u-g2-s7D" secondAttribute="leading" id="rdZ-m4-Bhl"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Pdd-M6-Mpc"/>
+                    <connections>
+                        <outlet property="arrow" destination="4uw-Fs-feC" id="HbH-Fb-lg6"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DcR-t6-coO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="760.79999999999995" y="273.91304347826087"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HMi-Ii-hFb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6YO-A0-JCX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rnj-Bm-qZF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fdw-T9-t0H" kind="relationship" relationship="rootViewController" id="9md-G8-Vcu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRV-Vn-8di" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178.40000000000001" y="273.91304347826087"/>
         </scene>
     </scenes>
 </document>

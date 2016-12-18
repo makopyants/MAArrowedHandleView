@@ -1,0 +1,6 @@
+framework module Pods_MAArrowedHandleView_Example {
+  umbrella header "Pods-MAArrowedHandleView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
