@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MAArrowedHandleView'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'An arrow handle like iOS 10 Apple Music application'
 
 # This description is used to generate tags and improve search results.
@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
+  An arrow handle like iOS 10 Apple Music application
 TODO: make Swift version.
                        DESC
 

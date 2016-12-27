@@ -27,7 +27,34 @@ static const CGFloat kMod = 1.0f/3.0f;
         _mode = 0;
     }
     
-    [self setNeedsDisplay];
+    CABasicAnimation * animation = [CABasicAnimation animationWithKeyPath:@"path"];
+    animation.fromValue = (id)self.shapeLayer.path;
+    switch (_mode)
+    {
+        case MAHandleDisplayModeHorizontalLine:
+            self.shapeLayer.path = [self pathForHorizontalLineStyle].CGPath;
+            break;
+        case MAHandleDisplayModeArrowDown:
+            self.shapeLayer.path = [self pathForArrowDownStyle].CGPath;
+            break;
+        case MAHandleDisplayModeArrowUp:
+            self.shapeLayer.path = [self pathForArrowUpStyle].CGPath;
+            break;
+        case MAHandleDisplayModeVerticalLine:
+            self.shapeLayer.path = [self pathForVerticalLineStyle].CGPath;
+            break;
+        case MAHandleDisplayModeArrowLeft:
+            self.shapeLayer.path = [self pathForArrowLeftStyle].CGPath;
+            break;
+        case MAHandleDisplayModeArrowRight:
+            self.shapeLayer.path = [self pathForArrowRightStyle].CGPath;
+            break;
+        default:
+            break;
+    }
+    animation.toValue = (id)self.shapeLayer.path;
+    animation.duration = .2f;
+    [self.shapeLayer addAnimation:animation forKey:@"path"];
 }
 
 - (void)setColor:(UIColor *)color
@@ -210,37 +237,6 @@ static const CGFloat kMod = 1.0f/3.0f;
 }
 
 
-- (void)drawRect:(CGRect)rect
-{
-    CABasicAnimation * animation = [CABasicAnimation animationWithKeyPath:@"path"];
-    animation.fromValue = (id)self.shapeLayer.path;
-    switch (self.mode)
-    {
-        case MAHandleDisplayModeHorizontalLine:
-            self.shapeLayer.path = [self pathForHorizontalLineStyle].CGPath;
-            break;
-        case MAHandleDisplayModeArrowDown:
-            self.shapeLayer.path = [self pathForArrowDownStyle].CGPath;
-            break;
-        case MAHandleDisplayModeArrowUp:
-            self.shapeLayer.path = [self pathForArrowUpStyle].CGPath;
-            break;
-        case MAHandleDisplayModeVerticalLine:
-            self.shapeLayer.path = [self pathForVerticalLineStyle].CGPath;
-            break;
-        case MAHandleDisplayModeArrowLeft:
-            self.shapeLayer.path = [self pathForArrowLeftStyle].CGPath;
-            break;
-        case MAHandleDisplayModeArrowRight:
-            self.shapeLayer.path = [self pathForArrowRightStyle].CGPath;
-            break;
-        default:
-            break;
-    }
-    animation.toValue = (id)self.shapeLayer.path;
-    animation.duration = .2f;
-    [self.shapeLayer addAnimation:animation forKey:@"path"];
-}
 
 
 @end
