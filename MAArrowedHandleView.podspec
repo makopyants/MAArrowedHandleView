@@ -22,10 +22,10 @@ Pod::Spec.new do |s|
 TODO: make Swift version.
                        DESC
 
-  s.homepage         = 'https://github.com/devthanatos/MAArrowedHandleView'
+  s.homepage         = 'https://github.com/makopyants/MAArrowedHandleView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Michael Akopyants' => 'michael.akopyants@gmail.com' }
-  s.source           = { :git => 'https://github.com/devthanatos/MAArrowedHandleView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/makopyants/MAArrowedHandleView.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
